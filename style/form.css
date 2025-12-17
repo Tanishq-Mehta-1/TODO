@@ -1,0 +1,72 @@
+form > button {
+  font-family: "Courier New", Courier, monospace;
+  background-color: rgb(0, 0, 0);
+
+  color: rgb(79, 236, 17);
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin: 10px 180px 0px;
+  border-radius: 10px;
+}
+
+dialog {
+  /* display: block; */
+  background-color: rgb(0, 0, 0);
+  color: rgb(79, 236, 17);
+
+  border: 1px solid;
+  border-radius: 5px;
+  overflow: hidden;
+  font-family: "Courier New", Courier, monospace;
+
+  min-width: 100px;
+  height: fit-content;
+}
+
+form {
+  height: 400px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+form > *:not(label) {
+  border: 1px solid;
+}
+
+label{
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin: 10px 0px 0px;
+}
+
+form > input,
+form > textarea {
+  font-family: "Courier New", Courier, monospace;
+  background-color: black;
+  color: rgb(79, 236, 17);
+
+  font-size: 1.2rem;
+}
+
+form > textarea {
+  flex-grow: 1;
+  resize: none;
+}
+
+.radio-holder{
+  border: none;
+}
+
+.radio-holder > label {
+  margin: 10px;
+  text-transform: capitalize;
+}
+
+label[for="high"] {
+  color: rgb(231, 95, 95);
+}
+
+label[for="medium"] {
+  color: rgb(95, 95, 243);
+}

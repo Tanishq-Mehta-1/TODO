@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEO's TODO</title>
+    <link href="./style/styles.css" rel="stylesheet">
+    <link href="./style/form.css" rel="stylesheet">
+    <link href="./style/projectCard.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <h1>TODO</h1>
+    </header>
+
+    <div class="display">
+        <div class="row1">
+            <h3 class="my-projects">My Projects:</h3>
+            <button class="add-project">+</button>
+        </div>
+
+        <div class="card-container">
+        </div>
+
+
+        <dialog id="project-modal">
+            <form method="dialog" class="add-form">
+                <label>TITLE</label>
+                <input name="Title" type="text" required>
+
+                <label>DESCRIPTION</label>
+                <textarea name="Description" rows="5" cols="50">Enter a description</textarea>
+
+                <button value="confirm">CONFIRM</button>
+            </form>
+        </dialog>
+
+        <dialog id="todo-modal">
+            <form method="dialog" class="add-form">
+                <label>TITLE</label>
+                <input name="Title" type="text" required>
+                <label>PRIORITY</label>
+                <div class="radio-holder">
+                    <input type="radio" name="Priority" value="high" required><label for="high">High</label>
+                    <input type="radio" name="Priority" value="medium" required><label for="medium">Medium</label>
+                    <input type="radio" name="Priority" value="low" required><label for="low">Low</label>
+                </div>
+                <label>DESCRIPTION</label>
+                <textarea name="Description" rows="5" cols="50">Enter a description</textarea>
+
+                <button value="confirm">CONFIRM</button>
+            </form>
+        </dialog>
+
+    </div>
+
+    <footer>
+        <p class="footer-text"> &copy;2025 Tanishq Mehta</p>
+        <a href="https://github.com/Tanishq-Mehta-1" target="_blank" rel="noopener noreferrer">
+            <img src="./media/github.png" alt="logo of github" width="30" height="30" />
+        </a>
+    </footer>
+
+
+    <script type="module" src="UI.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+body {
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  background-color: black;
+
+  height: 100vh;
+  width: 100vw;
+
+  font-family: "Courier New", Courier, monospace;
+  color: rgb(79, 236, 17);
+}
+
+h1 {
+  margin: 0px 10px;
+  font-size: 5rem;
+  /* text-shadow: 2px 3px 0px rgb(10, 47, 71); */
+}
+
+header {
+  max-height: fit-content;
+  background-color: rgb(0, 0, 0);
+}
+
+footer {
+  max-height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer > * {
+  margin: 20px;
+  border: 1px solid black;
+}
+
+footer > a > img {
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  width: 30px;
+  height: auto;
+}
+
+.display {
+  height: auto;
+  /* border: 1px solid white; */
+  margin: 0px 15px;
+
+  flex: 1 1 auto;
+  overflow-x: hidden;
+  /* overflow: hidden; */
+}
+
+.row1 {
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid white; */
+}
+
+.add-project {
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
+
+  color: rgb(79, 236, 17);
+  font-size: 2rem;
+  background-color: black;
+  border: 1px solid white;
+}
+
+.my-projects {
+  font-size: 2rem;
+  margin: 10px 0px;
+}

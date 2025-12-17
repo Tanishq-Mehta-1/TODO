@@ -1,0 +1,106 @@
+.project-card {
+  display: flex;
+  flex-direction: column;
+
+  border: 1px solid;
+  border-radius: 10px;
+  box-shadow: 0px 1px 0px 0px rgb(255, 255, 255);
+
+  margin: 20px 0px;
+  padding: 20px;
+
+  max-width: 100%;
+  max-height: 200px;
+  overflow: hidden;
+
+  transition: max-height 0.7s ease-in-out;
+}
+
+.project-card_row1 {
+  display: flex;
+
+  margin: 0px 0px 20px;
+}
+
+.project-card_row1 > h4,
+.todo-card > h5 {
+  margin: 0px 50px;
+  font-size: 1.5rem;
+
+  text-transform: uppercase;
+  color: blue;
+
+  max-width: 400px;
+  overflow-wrap: break-word;
+}
+
+.project-card_row1 > p,
+.todo-card > p {
+  margin: 0px 50px;
+  font-size: 1.1rem;
+}
+
+.project-card:hover,
+.project-card_row1:hover,
+.project-card.expanded {
+  max-height: 800px;
+
+  /* overflow-y: auto;
+  overflow-x: hidden; */
+}
+
+.project-card > button {
+  font-family: "Courier New", Courier, monospace;
+  background-color: rgb(0, 0, 0);
+
+  color: rgb(79, 236, 17);
+  font-weight: bold;
+  font-size: 1.5rem;
+
+  width: 3rem;
+  height: 3rem;
+  margin: 10px 40px;
+  border-radius: 1.5rem;
+  border: 1px solid white;
+
+  max-height: 0px;
+  opacity: 0;
+  flex-direction: column;
+
+  transition: opacity 1s ease-in-out, max-height 1s ease-in-out;
+}
+
+.project-card > button.expanded {
+  opacity: 1;
+  max-height: 600px;
+}
+
+.todo-holder {
+  max-height: 0px;
+  opacity: 0;
+  flex-direction: column;
+
+  overflow: hidden;
+
+  transition: opacity 1s ease-in-out, max-height 1s ease-in-out;
+}
+
+.todo-holder.expanded {
+  opacity: 1;
+  max-height: 600px;
+}
+
+.todo-card {
+  display: flex;
+
+  border: 1px solid;
+  border-radius: 10px;
+
+  margin: 5px 0px;
+  padding: 5px;
+
+  max-width: 100%;
+  max-height: 50px;
+
+  overflow: hidden;
+}
